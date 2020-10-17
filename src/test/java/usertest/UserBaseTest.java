@@ -1,4 +1,4 @@
-package user;
+package usertest;
 
 import services.UserService;
 

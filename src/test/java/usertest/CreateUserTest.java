@@ -1,11 +1,9 @@
-package user.createuser;
-
+package usertest;
 
 import dto.User;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import org.junit.jupiter.api.Test;
-import user.UserBaseTest;
 
 import static org.hamcrest.Matchers.*;
 
@@ -43,8 +41,8 @@ public class CreateUserTest extends UserBaseTest {
     @Test
     public void checkCreateUserMinSet() {
         user = User.builder()
-                .username("HappyPet")
-                .email("petshoptest@mail.com")
+                .username("HappyPetMinSet")
+                .email("petshopminsettest@mail.com")
                 .build();
 
         response = userService.addUserRequest(user);

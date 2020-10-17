@@ -1,10 +1,9 @@
-package user.getuser;
+package usertest;
 
 import dto.User;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import org.junit.jupiter.api.Test;
-import user.UserBaseTest;
 
 import static org.hamcrest.Matchers.*;
 
